@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index_signup.css">
+</head>
+<body>
+    <header>
+        <h1>ViCLOpedia</h1>
+    </header>
+    <div class="container">
+        <h2>Login Here</h2>
+        <form onsubmit="return redirectToHome()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="index.html">Sign up here</a></p>
+    </div>
+
+    <script>
+        function redirectToHome() {
+            window.location.href = './home_page.html';
+            return false;
+        }
+    </script>
+</body>
+</html>
